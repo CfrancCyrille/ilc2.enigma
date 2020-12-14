@@ -22,23 +22,34 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| setPositions  |  |  |
-| advanceRotors  |  |  |
-| Etc.  |  |  |
+| setPositions  | T |  |
+| advanceRotors  | T |  |
+| configure  | D | constructor |
+| convert  | I | using another tested function |
+| convertChar  | I | using another tested function |
+| initRotors | A | constructor |
 
 ### Classe Reflector
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| convertForward  | T | too much modulo in it, worth a test |
+| Reflector  | A | constructor |
+| convertBackward  | T | too much module in it, worth a test |
+| advance  |  | function Null |
+| reflectorFactory  | A | constructor |
 
 ### Classe Rotor
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| convertForward  | T | too much modulo in it, worth a test |
+| convertBackward  | T | too much module in it, worth a test |
+| getPosition  | D | no need to test getters |
+| setPosition  | D | no need to test setters |
+| toLetter  | D | casting |
+| toIndex | D | casting |
+| createBCipher | D | |
 
 ## Test some functions
 
