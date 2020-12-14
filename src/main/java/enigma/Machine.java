@@ -7,6 +7,14 @@ public class Machine {
 	private Rotor rightRotor;
 	private Reflector reflector;
 
+	/**
+	 *
+	 * @param reflector Setup the reflector of the machin
+	 * @param left The left rotor of the machin
+	 * @param middle The middle rotor of the machin
+	 * @param right The right rotor of the machin
+	 *
+	 */
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;
 		leftRotor = left;
@@ -14,6 +22,10 @@ public class Machine {
 		rightRotor = right;
 	}
 
+	/**
+	 *
+	 * @param setting
+	 */
 	public void setPositions(String setting) {
 		char[] charSettings = setting.toCharArray();
 		reflector.setPosition(Rotor.toIndex(charSettings[0]));
@@ -21,13 +33,26 @@ public class Machine {
 		middleRotor.setPosition(Rotor.toIndex(charSettings[2]));
 		rightRotor.setPosition(Rotor.toIndex(charSettings[3]));
 	}
-	
+
+	/**
+	 * Same as init but add settings and set positions
+	 * @param reflector
+	 * @param left
+	 * @param middle
+	 * @param right
+	 * @param setting
+	 */
 	public void configure(Reflector reflector, Rotor left, Rotor middle, Rotor right, String setting) {
 		this.initRotors(reflector, left, middle, right);
 		this.setPositions(setting);
 
 	}
 
+	/**
+	 * convert the MSG to upper case
+	 * @param msg
+	 * @return
+	 */
 	public String convert(String msg) {
 		msg = msg.toUpperCase();
 		char[] msgChars = msg.toCharArray();
@@ -38,6 +63,11 @@ public class Machine {
 		return result;
 	}
 
+	/**
+	 *
+	 * @param c
+	 * @return
+	 */
 	char convertChar(char c) {
 		advanceRotors();
 		int charIndex = Rotor.toIndex(c);
@@ -53,6 +83,9 @@ public class Machine {
 
 	}
 
+	/**
+	 *
+	 */
 	void advanceRotors() {
 		boolean advanceLeft = false;
 		boolean advanceMiddle = false;
