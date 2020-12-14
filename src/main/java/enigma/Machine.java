@@ -1,11 +1,32 @@
 package enigma;
 
+/***
+ * CLASSE Machine
+ * créer la machine enigma avec tous ses composants : les roues et le reflector (roue particulière qui permet d'encoder le message)
+ *
+ */
+
 public class Machine {
 
+	public Rotor getLeftRotor() {
+		return leftRotor;
+	}
+
+	public Rotor getMiddleRotor() {
+		return middleRotor;
+	}
+
+	public Rotor getRightRotor() {
+		return rightRotor;
+	}
+
+	//ATTRIBUTS
 	private Rotor leftRotor;
 	private Rotor middleRotor;
 	private Rotor rightRotor;
 	private Reflector reflector;
+
+
 
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;
@@ -14,6 +35,7 @@ public class Machine {
 		rightRotor = right;
 	}
 
+	//
 	public void setPositions(String setting) {
 		char[] charSettings = setting.toCharArray();
 		reflector.setPosition(Rotor.toIndex(charSettings[0]));
@@ -76,5 +98,12 @@ public class Machine {
 		if (advanceMiddle) {
 			middleRotor.advance();
 		}
+	}
+
+
+	////////////////
+	public Reflector getReflector()
+	{
+		return reflector;
 	}
 }

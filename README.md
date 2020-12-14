@@ -20,25 +20,39 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 ### Classe Machine
 
-| Function      |     I A D T     |        Comment |
+| Function      |     I A D T     |        Comment  |
 | :------------ | :-------------: | :------------- |
-| setPositions  |  |  |
-| advanceRotors  |  |  |
-| Etc.  |  |  |
+| setPositions  |        T        |                 |
+| advanceRotors |        T        |                 |
+| configure	|  	 D	  |  		    |
+| convert	|  	 T	  |  		    |
+| convertChar	|  	 A	  |  		    |
+
 
 ### Classe Reflector
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| convertForward  |    T          |                |
+| convertBackward |    A          |                |
+| reflectorFactory|    A          |                |
+| advance         |    D          |                |
 
 ### Classe Rotor
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| convertForward  |   T 	  |  		   |
+| rotorFactory  |     D		  |   		   |
+| convertBackward |   T 	  |  	           |
+| advance	 |    I		  |  		|
+| atNotch	|     I		  |  		|
+| rotor		|     I 	  |  		|
+| toLetter	|     T		  | 		|
+| toIndex	|     T		  |  		|
+| createBCipher |     I		  |  		|
+[ getPosition	|     D		  |
+| setPosition   |     D		  |
 
 ## Test some functions
 
