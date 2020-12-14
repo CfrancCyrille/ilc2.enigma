@@ -6,10 +6,10 @@ package enigma;
  */
 public class Machine {
 
-	private Rotor leftRotor;
-	private Rotor middleRotor;
-	private Rotor rightRotor;
-	private Reflector reflector;
+	Rotor leftRotor;
+	Rotor middleRotor;
+	Rotor rightRotor;
+	Reflector reflector;
 
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;

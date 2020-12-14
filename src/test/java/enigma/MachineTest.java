@@ -38,4 +38,20 @@ public class MachineTest {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	/**
+	 * This test set position
+	 */
+	public void testSetPositions() {
+		Machine m = new Machine();
+		Main.configure(m, config);
+
+		String actual = new String("1234");
+		m.setPositions(actual);
+
+		assertEquals(m.reflector.getPosition(), actual.toCharArray()[0] - 'A');
+		assertEquals(m.leftRotor.getPosition(), actual.toCharArray()[1] - 'A');
+		assertEquals(m.middleRotor.getPosition(), actual.toCharArray()[2] - 'A');
+		assertEquals(m.rightRotor.getPosition(), actual.toCharArray()[3] - 'A');
+	}
 }
