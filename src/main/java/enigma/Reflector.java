@@ -1,7 +1,12 @@
 package enigma;
 
-/** Class that represents a reflector in the enigma.
- *  @author
+/**
+ *
+ *  @author PeterBachour
+ *
+ *  Class that represents a reflector in the enigma.
+ *  Connects inputs to outputs and complexifies the encoding
+ *
  */
 public class Reflector extends Rotor {
 	
