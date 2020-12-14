@@ -11,7 +11,7 @@ public class Rotor {
 
     /**
      *
-     * @return
+     * @return position
      */
     public int getPosition() {
         return position;
@@ -29,7 +29,7 @@ public class Rotor {
      *
      * @param str
      * @param notches
-     * @return
+     * @return a new rotor
      */
 	public static Rotor rotorFactory(String str, String notches){
 		char[] s = str.trim().replace(" ", "").toCharArray();
@@ -73,7 +73,7 @@ public class Rotor {
     /**
      *
      * @param p
-     * @return
+     * @return the converted index by the rotor
      */
     public int convertForward(int p) {
         return ((cipher[((p+position)%26+26)%26]-position)%26+26)%26;
@@ -82,7 +82,7 @@ public class Rotor {
     /**
      *
      * @param e
-     * @return
+     * @return the converted index by the rotor
      */
     public int convertBackward(int e) {
         return ((bcipher[((e+position)%26+26)%26]-position)%26+26)%26;
