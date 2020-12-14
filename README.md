@@ -2,24 +2,23 @@
 Code for the German Enigma machine used in WW2.
 
 ## Questions
-- Fork this github repository  (2 points)
-- Run the project
-- Comment the 3 classes (3 points)
-- Commit your changes and check-it into github
-- On github, make a pull request (1 point)
-- Complete the next section : "Functions to be tested" into this file (2 points)
-- Commit your changes (commit README.md)
-- On github, update your pull request (1 point)
-- Make tests (call your test functions using the rule: GIVEN_WHEN_THEN) (10 points)
-- Commit your changes
-- On github, update your pull request (1 point)
-- that ends
+1. Fork this github repository  (2 points)
+2. Run the project
+3. Comment the 3 classes (3 points)
+4. Commit your changes and check-it into github
+5. On github, make a pull request (1 point)
+6. Complete the next section : "Functions to be tested" into this file (2 points)
+7. Commit your changes (commit README.md)
+8. On github, update your pull request (1 point)
+9. Make tests (call your test functions using the rule: GIVEN_WHEN_THEN) (10 points)
+10. Commit your changes
+11. On github, update your pull request (1 point)
+12. that ends
 
 ## Functions to be tested
 Hereafter, for each classes give function to be tested. Remember that all functions does not have to be tested, some code can be checked by a simple inspection or an analyse, another code can be validated by definition (rules, etc) the others function can be tecsted by unit tests, integration tests or validation tests (IADT: Inspect, Analyse, Define, Test). 
 
 ### Classe Machine
-#### functions
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
@@ -28,10 +27,18 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 | Etc.  |  |  |
 
 ### Classe Reflector
-#### functions
+
+| Function      |     I A D T     |        Comment |
+| :------------ | :-------------: | :------------- |
+| convertForward  |  |  |
+| Etc.  |  |  |
 
 ### Classe Rotor
-#### functions
+
+| Function      |     I A D T     |        Comment |
+| :------------ | :-------------: | :------------- |
+| convertForward  |  |  |
+| Etc.  |  |  |
 
 ## Test some functions
 
