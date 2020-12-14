@@ -37,5 +37,63 @@ public class MachineTest {
 		String actual = m.convert(msg2);
 		assertEquals(expected, actual);
 	}
+	
+	
+	Rotor leftRotor = Rotor.rotorFactory("E K M F L G D Q V Z N T O W Y H X U S P A I B R C J", "Q");
+	Rotor middleRotor = Rotor.rotorFactory("A J D K S I R U X B L H W T M C Q G Z N P Y F V O E", "E");
+	Rotor rightRotor = Rotor.rotorFactory("B D F H J L C P R T X V Z N Y E I W G A K M U S Q O", "V");
+	Reflector reflector = Reflector.reflectorFactory("Y R U H Q S L D P X N G O K M I E B F Z C W V J A T");
+
+	String setting = "1234";
+	Machine m = new Machine();
+
+	
+	@Test
+	/*
+	 * GIVEN_WHEN_THEN
+	 */
+	public void setPositions_reflector_toIndex1() {
+		
+		m.configure(reflector, leftRotor, middleRotor, rightRotor, setting);
+		
+		int expected = reflector.toIndex('1');
+		assertEquals(expected, reflector.getPosition());
+		
+	}
+	
+	@Test
+	/*
+	 * GIVEN_WHEN_THEN
+	 */
+	public void setPositions_leftRotor_toIndex2() {
+		m.configure(reflector, leftRotor, middleRotor, rightRotor, setting);
+		
+		int expected = leftRotor.toIndex('2');
+		assertEquals(expected, leftRotor.getPosition());
+	}
+	
+	@Test
+	/*
+	 * GIVEN_WHEN_THEN
+	 */
+	public void setPositions_middleRotor_toIndex3() {
+		m.configure(reflector, leftRotor, middleRotor, rightRotor, setting);
+		
+		int expected = leftRotor.toIndex('3');
+		assertEquals(expected, middleRotor.getPosition());
+	}
+	
+	@Test
+	/*
+	 * GIVEN_WHEN_THEN
+	 */
+	public void setPositions_rightRotor_toIndex4() {
+		m.configure(reflector, leftRotor, middleRotor, rightRotor, setting);
+		
+		int expected = leftRotor.toIndex('4');
+		assertEquals(expected, rightRotor.getPosition());
+	}
+	
+	
 
 }
