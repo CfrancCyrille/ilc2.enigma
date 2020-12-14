@@ -22,22 +22,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| setPositions  |  |  |
-| advanceRotors  |  |  |
+| setPositions  | D | Tests not needed |
+| advanceRotors  | T | Need tests |
+| configure  | D | Constructor |
 | Etc.  |  |  |
 
 ### Classe Reflector
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
+| convertForward  | T |  |
+| Reflector  | A | Constructor |
 | Etc.  |  |  |
 
 ### Classe Rotor
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
+| getPosition  | D | Tests not needed |
+| setPosition  | D | Tests not needed |
+| convertForward  | T | Need test |
 | Etc.  |  |  |
 
 ## Test some functions
