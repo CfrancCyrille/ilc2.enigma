@@ -1,5 +1,11 @@
 package enigma;
 
+/**
+ * CLASS Machine
+ * Cette classe rejoint les deux autres classes. Elle réalise le cryptage d'un méssage.
+ * @author joseph
+ *
+ */
 public class Machine {
 
 	private Rotor leftRotor;
@@ -7,12 +13,14 @@ public class Machine {
 	private Rotor rightRotor;
 	private Reflector reflector;
 
+
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;
 		leftRotor = left;
 		middleRotor = middle;
 		rightRotor = right;
 	}
+
 
 	public void setPositions(String setting) {
 		char[] charSettings = setting.toCharArray();
@@ -22,11 +30,12 @@ public class Machine {
 		rightRotor.setPosition(Rotor.toIndex(charSettings[3]));
 	}
 	
+	
 	public void configure(Reflector reflector, Rotor left, Rotor middle, Rotor right, String setting) {
 		this.initRotors(reflector, left, middle, right);
 		this.setPositions(setting);
-
 	}
+
 
 	public String convert(String msg) {
 		msg = msg.toUpperCase();

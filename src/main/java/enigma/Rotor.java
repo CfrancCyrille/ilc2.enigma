@@ -1,5 +1,11 @@
 package enigma;
 
+/**
+ * CLASS Rotor
+ * Cette class est la class principale du cryptage.
+ * @author joseph
+ *
+ */
 public class Rotor {
 
     private int position;
