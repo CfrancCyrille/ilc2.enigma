@@ -8,6 +8,18 @@ package enigma;
 
 public class Machine {
 
+	public Rotor getLeftRotor() {
+		return leftRotor;
+	}
+
+	public Rotor getMiddleRotor() {
+		return middleRotor;
+	}
+
+	public Rotor getRightRotor() {
+		return rightRotor;
+	}
+
 	//ATTRIBUTS
 	private Rotor leftRotor;
 	private Rotor middleRotor;
@@ -86,5 +98,12 @@ public class Machine {
 		if (advanceMiddle) {
 			middleRotor.advance();
 		}
+	}
+
+
+	////////////////
+	public Reflector getReflector()
+	{
+		return reflector;
 	}
 }

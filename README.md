@@ -21,7 +21,7 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 ### Classe Machine
 
 | Function      |     I A D T     |        Comment  |
-| :------------ | :-------------: | :-------------: |
+| :------------ | :-------------: | :------------- |
 | setPositions  |        T        |                 |
 | advanceRotors |        T        |                 |
 | configure	|  	 D	  |  		    |

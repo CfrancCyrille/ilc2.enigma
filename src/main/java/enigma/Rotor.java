@@ -10,7 +10,18 @@ package enigma;
 public class Rotor {
 
     private int position;
+
+    public int[] getCipher() {
+        return cipher;
+    }
+
+    public int[] getBcipher() {
+        return bcipher;
+    }
+
     private int[] cipher = new int[26];
+
+
     private int[] bcipher = new int[26];
     private int notch1 = -1;
     private int notch2 = -1;
