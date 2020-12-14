@@ -43,7 +43,9 @@ public class Rotor {
 		cipher = c;
 		createBCipher();
 	}
-
+    /**
+     * Lorem ipsum dolor
+     */
     public int convertForward(int p) {
         return ((cipher[((p+position)%26+26)%26]-position)%26+26)%26;
     }
