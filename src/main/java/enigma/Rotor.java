@@ -1,5 +1,12 @@
 package enigma;
 
+/*
+* CLASSE Rotor
+* Sert à créer l'objet "roue adjacente" utilisé pour chiffrer le message
+* Sera utilisé pour créer les 4 roues dont le reflector qui hérite de rotor
+* utilise les lettres de l'alphabet
+*/
+
 public class Rotor {
 
     private int position;
