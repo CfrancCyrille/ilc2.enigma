@@ -22,9 +22,10 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| setPositions  |  |  |
-| advanceRotors  |  |  |
-| Etc.  |  |  |
+| setPositions  |        T        |                |
+| advanceRotors  |               |                |
+| configure	  |  |  |
+| 
 
 ### Classe Reflector
 
