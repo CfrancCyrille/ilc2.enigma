@@ -1,5 +1,9 @@
 package enigma;
 
+/**
+ * Setup of Rotor.
+ * To create an rotor.
+ */
 public class Rotor {
 
     private int position;
