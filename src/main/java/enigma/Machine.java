@@ -1,5 +1,13 @@
 package enigma;
 
+/**
+ *
+ * @author PeterBachour
+ *
+ * Setup of Rotors and configure their positions.
+ * Encodes the input given
+ *
+ */
 public class Machine {
 
 	private Rotor leftRotor;
