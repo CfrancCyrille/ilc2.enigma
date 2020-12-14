@@ -6,7 +6,12 @@ package enigma;
 public class Reflector extends Rotor {
 	
 	int[] reflection;
-	
+
+	/**
+	 *
+	 * @param str
+	 * @return
+	 */
 	public static Reflector reflectorFactory(String str){
 		char[] s = str.trim().replace(" ", "").toCharArray();
 		int[] cipher = new int[26];
@@ -15,22 +20,39 @@ public class Reflector extends Rotor {
 		}
 		return new Reflector(cipher);
 	}
-	
+
+	/**
+	 *
+	 * @param r
+	 */
 	Reflector(int[] r){
 		super(r,0);
 		reflection = r;
 	}
-        
+
+	/**
+	 *
+	 * @param p
+	 * @return
+	 */
     public int convertForward(int p) {
         return ((reflection[((p)%26+26)%26])%26+26)%26;
     }
 
-    @Override
+	/**
+	 *
+	 * @param unused
+	 * @return
+	 */
+	@Override
     public int convertBackward(int unused) {
         throw new UnsupportedOperationException();
     }
 
-    @Override
+	/**
+	 * Override advance method
+	 */
+	@Override
     public void advance() {
     }
 
