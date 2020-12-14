@@ -1,5 +1,12 @@
 package enigma;
 
+/**
+ * Classe de la machine enigma
+ * 
+ * Contient un Rotor gauche, centre et droit et un Reflector
+ * 
+ * @author Nicolas
+ */
 public class Machine {
 
 	private Rotor leftRotor;

@@ -1,5 +1,10 @@
 package enigma;
 
+/**
+ * Classe qui represente un rotor
+ * 
+ * @author Nicolas
+ */
 public class Rotor {
 
     private int position;
