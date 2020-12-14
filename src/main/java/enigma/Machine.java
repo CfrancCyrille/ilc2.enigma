@@ -1,10 +1,32 @@
 package enigma;
 
+/***
+ * class Machine
+ * Permet de créer la machine enigma
+ */
 public class Machine {
 
 	private Rotor leftRotor;
+
+	public Rotor getLeftRotor() {
+		return leftRotor;
+	}
+
+	public Rotor getMiddleRotor() {
+		return middleRotor;
+	}
+
+	public Rotor getRightRotor() {
+		return rightRotor;
+	}
+
 	private Rotor middleRotor;
 	private Rotor rightRotor;
+
+	public Reflector getReflector() {
+		return reflector;
+	}
+
 	private Reflector reflector;
 
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {

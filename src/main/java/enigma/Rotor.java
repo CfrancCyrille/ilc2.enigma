@@ -1,5 +1,9 @@
 package enigma;
 
+/***
+ * Class Rotor
+ * Permet de créer des roues afin de coder le message
+ */
 public class Rotor {
 
     private int position;
