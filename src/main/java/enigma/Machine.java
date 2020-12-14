@@ -2,11 +2,25 @@ package enigma;
 
 public class Machine {
 
+	/**
+	 * The enigma machine is compososed of 3 rotors and one reflector
+	 * to connect each rotors and advance its rotors once a character has
+	 * been encrypted. It returns the encryption of a given message
+	 */
+
+
 	private Rotor leftRotor;
 	private Rotor middleRotor;
 	private Rotor rightRotor;
 	private Reflector reflector;
 
+	/**
+	 * Initialize the machine and its rotors
+	 * @param reflector the reflector of the machine
+	 * @param left the left rotor
+	 * @param middle the middle rotor
+	 * @param right the right rotor
+	 */
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;
 		leftRotor = left;
@@ -14,6 +28,10 @@ public class Machine {
 		rightRotor = right;
 	}
 
+	/**
+	 * Set the rotors position accroding to the given settings
+	 * @param setting the 4 settings (reflector , and 3 rotors)
+	 */
 	public void setPositions(String setting) {
 		char[] charSettings = setting.toCharArray();
 		reflector.setPosition(Rotor.toIndex(charSettings[0]));
@@ -21,13 +39,25 @@ public class Machine {
 		middleRotor.setPosition(Rotor.toIndex(charSettings[2]));
 		rightRotor.setPosition(Rotor.toIndex(charSettings[3]));
 	}
-	
+
+	/**
+	 * Configure the rotors and its positions according to the settings
+	 * @param reflector the reflector of the machine
+	 * @param left the left rotor
+	 * @param middle the middle rotor
+	 * @param right the right rotor
+	 * @param setting the stringified settings
+	 */
 	public void configure(Reflector reflector, Rotor left, Rotor middle, Rotor right, String setting) {
 		this.initRotors(reflector, left, middle, right);
 		this.setPositions(setting);
-
 	}
 
+	/**
+	 * Encrypt a message accordign to the existing settings
+	 * @param msg the given message to encrypt
+	 * @return the encrypted message in upper case
+	 */
 	public String convert(String msg) {
 		msg = msg.toUpperCase();
 		char[] msgChars = msg.toCharArray();
@@ -38,6 +68,10 @@ public class Machine {
 		return result;
 	}
 
+	/**
+	 * @param c char to be converted
+	 * @return the encrypted character
+	 */
 	char convertChar(char c) {
 		advanceRotors();
 		int charIndex = Rotor.toIndex(c);
@@ -53,6 +87,9 @@ public class Machine {
 
 	}
 
+	/**
+	 * Advance all the rotors according to the enigma principles
+	 */
 	void advanceRotors() {
 		boolean advanceLeft = false;
 		boolean advanceMiddle = false;
