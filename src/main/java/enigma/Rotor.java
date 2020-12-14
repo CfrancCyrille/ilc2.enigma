@@ -1,5 +1,12 @@
 package enigma;
 
+/**
+ * @author PeterBachour
+ *
+ * Transposes the characters inputed by turning the rotor each time
+ * a new character is entered and thus creates a new combination.
+ *
+ **/
 public class Rotor {
 
     private int position;
