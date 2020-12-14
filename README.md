@@ -79,7 +79,7 @@ public int convertBackward(int e)
 ### How simulate Enigma machine:
 - https://korben.info/enigma-le-simulateur.html
 ### Configuration code :
-- * B III IV I AXLE
+- \* B III IV I AXLE
 - FROM his shoulder Hiawatha / HYIHL BKOML IUYDC MPPSF SZW
 - Took the camera of rosewood / SQCNJ EXNUO JYRZE KTCNB DGU
 
