@@ -84,4 +84,22 @@ public class Machine {
 			middleRotor.advance();
 		}
 	}
+
+        public Rotor getLeftRotor() {
+            return leftRotor;
+        }
+
+        public Rotor getMiddleRotor() {
+            return middleRotor;
+        }
+
+        public Rotor getRightRotor() {
+            return rightRotor;
+        }
+
+        public Reflector getReflector() {
+            return reflector;
+        }
+        
+        
 }
