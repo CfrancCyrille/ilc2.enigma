@@ -71,7 +71,6 @@ public int convertBackward(int e)
 - Use @Test before each testFunction !
 - When you test a void function of the class Rotor, then test the rotor instance's state
 > Rotor r=new Rotor();
-
 > int actual = r.getosition();
 - You can test a function than throws an exception with the argument: expected
 > @Test(expected=Exception.class)
