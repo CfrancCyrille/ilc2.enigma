@@ -1,5 +1,9 @@
 package enigma;
 
+/***
+ * class Machine
+ * Permet de créer la machine enigma
+ */
 public class Machine {
 
 	private Rotor leftRotor;
