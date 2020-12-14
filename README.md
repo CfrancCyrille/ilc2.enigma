@@ -1,16 +1,18 @@
-# TP 4A ILC 2019-20: enigma
+# TP 4A ILC 2020-21: enigma
 Code for the German Enigma machine used in WW2.
 
 ## Questions
-- Fork this github repository
+- Fork this github repository  (2 points)
 - Run the project
-- Comment the 3 classes
+- Comment the 3 classes (3 points)
 - Commit your changes and check-it into github
-- Complete the next section : "Functions to be tested" into this file
+- On github, make a pull request (1 point)
+- Complete the next section : "Functions to be tested" into this file (2 points)
 - Commit your changes (commit README.md)
-- Make tests (call your test functions using the rule: GIVEN_WHEN_THEN) 
+- On github, update your pull request (1 point)
+- Make tests (call your test functions using the rule: GIVEN_WHEN_THEN) (10 points)
 - Commit your changes
-- On github, make a pull request 
+- On github, update your pull request (1 point)
 - that ends
 
 ## Functions to be tested
@@ -19,11 +21,40 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 ### Classe Machine
 #### functions
 
+| Function      |     I A D T     |        Comment |
+| :------------ | :-------------: | :------------- |
+| setPositions  |  |  |
+| advanceRotors  |  |  |
+| Etc.  |  |  |
+
 ### Classe Reflector
 #### functions
 
 ### Classe Rotor
 #### functions
+
+## Test some functions
+
+### Classe Machine
+#### functions
+
+public void setPositions(String setting)
+
+void advanceRotors()
+
+### Classe Reflector
+#### functions
+
+public int convertForward(int p)
+
+public int convertBackward(int e)
+
+### Classe Rotor
+#### functions
+
+public int convertForward(int p)
+
+public int convertBackward(int e)
 
 ## Tricks & tips
 
