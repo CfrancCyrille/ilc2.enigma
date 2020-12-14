@@ -1,5 +1,10 @@
 package enigma;
-
+/**
+ * 
+ * This class represents the whole Machine.
+ * It has all the rotors and reflectors used in the encryption and the main encryption methods
+ *
+ */
 public class Machine {
 
 	private Rotor leftRotor;

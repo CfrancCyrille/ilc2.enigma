@@ -1,5 +1,9 @@
 package enigma;
-
+/**
+ * 
+ * This class represents a rotor that will participate in the conversion (encryption) process
+ *
+ */
 public class Rotor {
 
     private int position;
