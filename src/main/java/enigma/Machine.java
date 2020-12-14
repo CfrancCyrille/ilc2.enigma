@@ -1,5 +1,9 @@
 package enigma;
 
+/**
+ * Setup of Machine and config him.
+ * Encode the input given.
+ */
 public class Machine {
 
 	private Rotor leftRotor;
