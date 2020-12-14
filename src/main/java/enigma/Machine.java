@@ -89,7 +89,6 @@ public class Machine {
 
 	/**
 	 * Advance all the rotors according to the enigma principles
-	 * the letter after (for ex : B -> C) and when we advance letter Z, it becomes A
 	 */
 	void advanceRotors() {
 		boolean advanceLeft = false;
