@@ -1,7 +1,8 @@
 package enigma;
 
 /** Class that represents a reflector in the enigma.
- *  @author
+ *  It complexifies the encryption
+ *
  */
 public class Reflector extends Rotor {
 	

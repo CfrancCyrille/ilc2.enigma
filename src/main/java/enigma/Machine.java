@@ -1,5 +1,8 @@
 package enigma;
 
+/**Class that represents the machine in the enigma.
+ * It defines its configuration and it encodes the message in a more complex way
+ */
 public class Machine {
 
 	private Rotor leftRotor;
