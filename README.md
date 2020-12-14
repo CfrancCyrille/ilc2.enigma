@@ -22,23 +22,43 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| setPositions  |  |  |
-| advanceRotors  |  |  |
-| Etc.  |  |  |
+| setPositions  | T |  |
+| advanceRotors | T |  |
+| convertChar   | I |  |
+| configure  | D | initialise the class |
+| convert  | I |  |
+| initRotors  | A | initialise attributes |
+
 
 ### Classe Reflector
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| reflectorFactory  | A |  |
+| Reflector  | A | constructor |
+| convertForward  | T |  |
+| convertBackward  | T |  |
+| advance  |  | Not implemented  |
+
 
 ### Classe Rotor
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| convertForward  |  |  |
-| Etc.  |  |  |
+| convertForward  | T |  |
+| getPosition  | D | Getter |
+| setPosition  | D | Setter |
+| rotorFactory  | A |  |
+| Rotor  | A | Constructor |
+| convertBackward  | T |  |
+| advance  | I |  |
+| atNotch  | I |  |
+| toLetter  | D | Simple cast |
+| toIndex  | D | Simple cast  |
+| createBCipher | I |  |
+
+
+
 
 ## Test some functions
 
