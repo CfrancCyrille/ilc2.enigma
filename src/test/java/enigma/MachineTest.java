@@ -38,4 +38,14 @@ public class MachineTest {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	/**
+	 * test de setPosition
+	 */
+	public void testSetposition_Reflector()
+	{
+
+	}
+
+
 }
